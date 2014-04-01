@@ -122,14 +122,14 @@ class WP_Responsive_Backgrounds {
 
 	public function init_thumbs() {
 		$rule_set = array (
-			array("breakpoint" => "150",
+			array("breakpoint" => "100",
 				  "size" => "768",
 				 ),
-			array("breakpoint" => "100",
+			array("breakpoint" => "769",
 				  "size" => "1280",
 				 ),
-			array("breakpoint" => "100",
-				  "size" => "1919",
+			array("breakpoint" => "1280",
+				  "size" => "1920",
 				 ),
 			);
 
