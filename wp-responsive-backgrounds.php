@@ -33,8 +33,6 @@ if ( ! defined( 'WPINC' ) ) {
 require_once( plugin_dir_path( __FILE__ ) . 'public/class-wp-responsive-backgrounds.php' );
 require_once( plugin_dir_path( __FILE__ ) . 'public/includes/api.php' );
 
-
-
 /*
  * Register hooks that are fired when the plugin is activated or deactivated.
  * When the plugin is deleted, the uninstall.php file is loaded.
