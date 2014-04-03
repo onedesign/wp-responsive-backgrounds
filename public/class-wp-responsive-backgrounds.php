@@ -104,9 +104,13 @@ class WP_Responsive_Backgrounds {
 		echo "<style>"; 
 		for($i = 0; $i < sizeof($this->breaks); $i++):
 			if(isset($bthis->reak_resolutions[$i]) && !empty($this->break_resolutions[$i])):
+				if(is_numeric($break_resolutions[$i])):
 				echo "@media all and (min-width: " . $this->break_resolutions[$i] . "px) {";
+				endif;
 					echo $this->breaks[$i];
+				if(is_numeric($break_resolutions[$i])):
 				echo "}";
+				endif;
 				$this->breaks[$i] = '';
 			endif;
 		endfor;
@@ -115,7 +119,7 @@ class WP_Responsive_Backgrounds {
 
 	public function init_thumbs() {
 		$rule_set = array (
-			array("breakpoint" => "100",
+			array("breakpoint" => "default",
 				  "size" => "768",
 				 ),
 			array("breakpoint" => "769",
