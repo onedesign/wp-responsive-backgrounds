@@ -76,8 +76,7 @@ class WP_Responsive_Backgrounds {
 		 */
 		add_action( 'after_setup_theme', array( $this, 'init_thumbs' ) );
 		add_action( 'init', array( $this, 'init_thumbs' ) );
-		add_action( 'wp_footer', 'print_the_responsive_styles');
-
+		add_action( 'wp_footer', array( $this,'print_the_responsive_styles' ) );
 	}
 
 	/**
